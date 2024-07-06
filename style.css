@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('./fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: Playwrite;
+    src: url('./fonts/PlaywriteGBS-VariableFont_wght.ttf');
+}
+
+.top{
+    max-width: 100vw;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(170deg, rgb(19, 146, 250), rgb(19, 146, 250) 60%, white 60%, white);
+}
+
+.top-content{
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    
+}
+
+.top-image{
+    min-width: 500px;
+    min-height: 500px;
+    background-image: url('./images/pexels-nappy-3602925.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    /* background-position: center; */
+}
+
+.top-card{
+    width: 800px;
+    height: 350px;
+    background-color:  #fff;
+    border-top: .5px solid #e0e0e0;
+    border-right: .5px solid #e0e0e0;
+    border-bottom: .5px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    gap: 16px;
+}
+
+.image01{
+    max-width: 500px;
+}
+
+.icons{
+    display: flex;
+    justify-content: end;
+}
+
+.icons>img{
+    height: 50px;
+    width: 50px;
+}
+
+.header{
+    font-size: 32px;
+    font-family: Playwrite;
+}
+
+.top-card>p{
+    font-family: Ubuntu;
+    color: #5f5f5f;
+}
