@@ -43,6 +43,11 @@
 
 }
 
+.top-card>p{
+    font-family: Ubuntu;
+    color: #5f5f5f;
+}
+
 .top-image{
     background-image: url('./images/pexels-nappy-3602925.jpg');
     background-size: cover;
@@ -55,6 +60,7 @@
     font-family: Playwrite;
 }
 
+/* Desktop */
 
 @media screen and (min-width: 1000px){
 
@@ -89,44 +95,77 @@
         width: 50px;
     }
     
-    .top-card>p{
-        font-family: Ubuntu;
-        color: #5f5f5f;
-    }
+    
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px){
+/* Tablets */
 
-    body{
-        background-color: purple;
-    }
+@media screen and (min-width: 600px) and (max-width: 1000px){
 
     .top-image{
         min-width: 300px;
         min-height: 300px;
-        justify-content: end;
+        justify-content: center;
+        /* align-items: center; */
     }
-
-    .top-image>h2{
-        margin-right: -250px;
-    }
-
 
     .top-card{
         width: 400px;
-        height: 175px;
+        min-height: 250px;
+        margin-top: 150px;
+        align-items: center;
+        padding: 16px;
     }
 
-    .icons>img{
-        width: 50px;
-        height: 100px;
+    .top-card>text{
+        text-align: justify;
+    }
+
+    .icons{
+        display: none;
     }
     
 }
 
-@media screen and (max-width: 500px){
-    /* body{
-        background-color: red;
-    } */
+/* Mobile */
+
+@media screen and (max-width: 600px){
+   .top-content{
+        flex-direction: column;
+   }
+
+   .top{
+        flex-direction: column;
+   }
+
+   .top-image{
+        min-width: 400px;
+        min-height: 500px;
+        justify-content: center;
+        align-items: end;
+   }
+
+   .top-card{
+        border: none;
+        max-width: 400px;
+        min-height: 400px;
+   }
+
+   .icons{
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        padding: 8px;
+    }
+
+    .icons>img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .card-header{
+        display: flex;
+        justify-content: center;
+    }
 }
 
