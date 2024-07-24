@@ -60,6 +60,16 @@
     font-family: Playwrite;
 }
 
+
+.project-card{
+    border: .5px solid #e0e0e0;
+    width: 350px;
+    height: 300px;
+}
+
+.mid-content{
+    width: 100%;
+}
 /* Desktop */
 
 @media screen and (min-width: 1000px){
@@ -94,6 +104,18 @@
         height: 50px;
         width: 50px;
     }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: 75px, 300px, 300px;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .mid-header{
+       grid-column: 1/4;
+    }
     
     
 }
@@ -125,6 +147,7 @@
         display: none;
     }
     
+
 }
 
 /* Mobile */
