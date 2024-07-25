@@ -70,6 +70,65 @@
 .mid-content{
     width: 100%;
 }
+
+.project-preview{
+    color: #fff;
+    height: 175px;
+    font-size: 36px;
+    font-family: Playwrite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card:nth-child(2) .project-preview{
+    background-color: rgb(97, 6, 28);
+}
+
+.project-card:nth-child(3) .project-preview{
+    background-color: rgb(184, 10, 184);
+}
+
+.project-card:nth-child(4) .project-preview{
+    background-color: rgb(27, 114, 27);
+}
+
+.project-card:nth-child(5) .project-preview{
+    background-color: rgb(240, 92, 215);
+}
+
+.project-card:nth-child(6) .project-preview{
+    background-color: rgb(177, 177, 1);
+}
+
+.project-card:nth-child(7) .project-preview{
+    background-color: rgb(26, 114, 197);
+}
+
+.project-description{
+    font-family: Ubuntu;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.description-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-icons{
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-icons>img{
+    height: 25px;
+    width: 25px;
+}
+
 /* Desktop */
 
 @media screen and (min-width: 1000px){
@@ -108,14 +167,15 @@
     .cards{
         display: grid;
         grid-template-columns: repeat(3, 400px);
-        grid-template-rows: 75px, 300px, 300px;
+        grid-template-rows: 75px 300px 300px;
         justify-content: center;
-        gap: 8px;
+        gap: 32px;
     }
 
     .mid-header{
        grid-column: 1/4;
     }
+
     
     
 }
